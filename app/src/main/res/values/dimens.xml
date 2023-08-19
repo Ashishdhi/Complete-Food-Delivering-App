@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_icon_padding">5dp</dimen>
+    <dimen name="menu_icon_text_size">10sp</dimen>
+    <dimen name="add_deliveryaddress_text">14sp</dimen>
+</resources>

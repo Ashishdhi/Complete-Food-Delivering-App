@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_product"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="7dp"
+                android:src="@drawable/fruit" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="7dp"
+                android:paddingVertical="7dp"
+                android:layout_toEndOf="@id/img_product"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gsemibold"
+                    android:text="Potato"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_productWeight"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/gregular"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/gray"
+                    tools:text="$10 / 500 Gram"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_productPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/gbold"
+                    android:singleLine="true"
+                    android:text="$18"
+                    android:textColor="@color/darkorange"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_round_gredent"
+                android:padding="7dp"
+
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_outline_delete_24"
+                app:tint="@color/white" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/btnclose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_outline_close_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/gbold"
+                android:text="Food-O-Door"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/orange_light"
+                android:textSize="45sp"
+                 />
+            <TextView
+                android:id="@+id/textview_login_enterOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/gbold"
+                android:text="Login to continue"
+                android:layout_margin="20dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                app:drawableTint="@color/dark_gray"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_login_with_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:backgroundTint="@color/white"
+                android:text="Continue with Google"
+                android:textColor="@color/processing"
+                app:cornerRadius="25dp"
+                app:strokeColor="@color/processing"
+                app:strokeWidth="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearlayoutphone" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/glight"
+                android:gravity="center"
+                android:text="@string/by_signing_in_you_agreeing_to_our" />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/gsemibold"
+                android:gravity="center"
+                android:text="@string/terms_and_privacy_policy" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</layout>

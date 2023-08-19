@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="3dp">
+
+        <RelativeLayout
+            android:id="@+id/imgdot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_round"
+            android:backgroundTint="@color/orange" />
+    </RelativeLayout>
+</layout>

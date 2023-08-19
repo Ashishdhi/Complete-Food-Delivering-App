@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp">
+
+
+            <View
+                android:id="@+id/radioBtn"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_round"
+                android:backgroundTint="@color/gray" />
+
+            <TextView
+                android:id="@+id/tv_productweight"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/radioBtn"
+                android:background="@color/gray"
+                android:fontFamily="@font/gmidum"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_productPrice"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/lytvarient"
+                android:background="@color/gray"
+
+                android:fontFamily="@font/gbold"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+
+            <RelativeLayout
+                android:id="@+id/lytvarient"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_gredent_10dp"
+                android:backgroundTint="@color/gray">
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
